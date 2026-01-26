@@ -1,0 +1,128 @@
+/*etapa2*/
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== CORES ===== */
+:root {
+    --verde-escuro: #0f3d2e;
+    --verde-medio: #1f6b4f;
+    --verde-claro: #e6f2ec;
+    --dourado: #c9a24d;
+    --dourado-claro: #e7c873;
+    --erro: #b03030;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: "Georgia", "Times New Roman", serif;
+    background: linear-gradient(135deg, #0f3d2e, #163f31);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== FORM ===== */
+form {
+    background: var(--verde-claro);
+    width: 100%;
+    max-width: 800px;
+    padding: 50px 60px;
+    border-radius: 14px;
+    border: 3px solid var(--dourado);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
+
+/* ===== TÍTULO ===== */
+form h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--verde-escuro);
+    letter-spacing: 2px;
+    font-size: 2rem;
+    position: relative;
+}
+
+form h2::after {
+    content: "";
+    width: 140px;
+    height: 3px;
+    background: linear-gradient(to right, transparent, var(--dourado), transparent);
+    display: block;
+    margin: 15px auto 0;
+}
+
+/* ===== CAMPOS ===== */
+form input[type="text"],
+form input[type="email"],
+form input[type="number"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: 2px solid var(--verde-medio);
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: #f9fffc;
+    transition: all 0.3s ease;
+}
+
+form input:focus {
+    outline: none;
+    border-color: var(--dourado);
+    box-shadow: 0 0 0 3px rgba(201,162,77,0.25);
+}
+
+/* ===== LABELS (texto antes dos inputs) ===== */
+form {
+    color: #1f1f1f;
+    font-size: 1.05rem;
+}
+
+/* ===== ERROS ===== */
+span {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--erro) !important;
+    margin-top: -12px;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+/* ===== BOTÃO ===== */
+input[type="submit"] {
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 45px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, var(--dourado), var(--dourado-claro));
+    color: #3b2a00;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.45);
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+    form {
+        padding: 35px 25px;
+    }
+
+    form h2 {
+        font-size: 1.6rem;
+    }
+}

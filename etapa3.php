@@ -40,7 +40,7 @@ if(isset($_POST["next"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIVROS-TEC</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-etapa3.css">
 </head>
 <body>
     <form method="POST" action="etapa3.php" class="form-container">
