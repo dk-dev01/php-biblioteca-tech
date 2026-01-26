@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 6</title>
-    <link rel="stylesheet" href="estilo.css" />
+    <title>Biblioteca</title>
+  <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
@@ -30,8 +30,8 @@
     <section id="livros-tech">
     <h1>Livros Populares</h1>
     <div class="imagens-livros">
-        <img src="https://bookcover4u.com/pro/N1500960581SCB-Future-High-Tech-Full-Book-Cover.jpg">
-        <img src="https://bookcover4u.com/pro/N1500960952SCB-Molecular-Thoughts-Full-Book-Cover.jpg" >
+        <img src="https://www.grupogen.com.br/media/catalog/product/9/7/9788595157545.jpg?optimize=low&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:">
+        <img src="https://m.media-amazon.com/images/I/61hewOW+8zL._UF1000,1000_QL80_.jpg" >
         <img src="https://media.wired.com/photos/61b39e3ec2f5f4d2aaf1c2bc/16%3A9/w_2240%2Ch_1260%2Cc_limit/Gear-Best-Tech-Books-Billion-Dollar-Loser-site-image.jpg" >
     </div>
     
