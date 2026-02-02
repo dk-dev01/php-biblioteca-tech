@@ -94,11 +94,14 @@ span {
     font-style: italic;
 }
 
-/* ===== BOTÃO ===== */
-input[type="submit"] {
-    display: block;
-    margin: 30px auto 0;
-    padding: 14px 45px;
+.botao{
+    text-align: center;
+}
+
+button, a {
+    display: inline-block;
+    margin: 40px auto 0;
+    padding: 15px 50px;
     font-size: 1.1rem;
     font-weight: bold;
     letter-spacing: 1px;
@@ -107,13 +110,14 @@ input[type="submit"] {
     cursor: pointer;
     background: linear-gradient(135deg, var(--dourado), var(--dourado-claro));
     color: #3b2a00;
-    box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.35);
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
-input[type="submit"]:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 14px 28px rgba(0,0,0,0.45);
+button:hover, a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px rgba(0,0,0,0.45);
 }
 
 /* ===== RESPONSIVO ===== */

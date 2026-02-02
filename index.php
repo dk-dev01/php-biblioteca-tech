@@ -44,7 +44,7 @@
 
     <footer>
         <p>
-        <form action="./etapa-2.php" method="POST">
+        <form action="./etapa2.php" method="POST">
 <button type="submit">Venda Produto</button>
 </form>
     </p>

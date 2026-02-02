@@ -13,15 +13,14 @@
     <?php
     	// recebendo dados - etapa 1
 		$nome=$_SESSION["nome"]; 
-		$cpf=$_SESSION["email"]; 
-		$telefone=$_SESSION["idade"];
-        $email=$_SESSION["sexo"];
-        $localizacao=$_SESSION["cpf"];
-        $estado=$_SESSION["telefone"];
+		$cpf=$_SESSION["cpf"]; 
+		$sexo=$_SESSION["sexo"]; 
+		$telefone=$_SESSION["telefone"];
+        $email=$_SESSION["email"];
+        $estado=$_SESSION["estado"];
         $cidade=$_SESSION["cidade"];
-        $endereco=$_SESSION["estado"];
-        $bairro=$_SESSION["endereco"];
-        $complemento=$_SESSION["cep"];
+        $endereco=$_SESSION["endereco"];
+        $cep=$_SESSION["cep"];
         $f = $_SESSION["f"];
         $p = $_SESSION["p"];
         
@@ -81,9 +80,13 @@
         } elseif ($tipo2 == 3) {
         $sub2=319.99;
         $tipo2 = "Versão Física Premium";
-        } else {
+        } elseif ($tipo2 == 4){
         $sub2=99.99;
         $tipo2 = "Versão E-book";
+        }
+        else{
+            $sub2=0;
+            $tipo2="Nenhum";
         }
 
         #complemento
@@ -156,12 +159,10 @@
     echo "CPF: $cpf <br>";
     echo "Email: $email <br>";
     echo "Telefone: $telefone <br>";
-    echo "Localização: $localizacao <br>";
-    echo "Estado: $estado <br>";
     echo "Cidade: $cidade <br>";
+    echo "Estado: $estado <br>";
     echo "Endereço: $endereco <br>";
-    echo "Bairro: $bairro <br>";
-    echo "Complemento: $complemento <br>";
+    echo "CEP: $cep <br>";
  
     echo "<h2> Produtos Selecionados</h2>";
     echo "<strong>Livro 1:</strong> $l1 - $tipo1 - R$ " . number_format($sub1, 2, ',', '.') . "<br>";
@@ -180,7 +181,9 @@
     echo "<h2> Forma de Pagamento</h2>";
     echo "Método: $pagamento<br>";
  
-    echo "<h1> TOTAL A PAGAR: R$ " . number_format($vt, 2, ',', '.') . "</h1>";
+    echo "<h1> TOTAL A PAGAR: R$ " . number_format($vt, 2, ',', '.') . "</h1><br>";
+
+    echo "<a href='index.php' class='voltar'>VOLTAR AO INÍCIO</a>";
     ?>
  
  

@@ -77,6 +77,7 @@ if(isset($_POST["next"])) {
             <label><input type="radio" name="tipo2" value="2"> Versão Física Capa Dura - R$299,99</label><br>
             <label><input type="radio" name="tipo2" value="3"> Versão Física Premium - R$319,99</label><br>
             <label><input type="radio" name="tipo2" value="4"> Versão E-book - R$99,99</label><br>
+            <label><input type="radio" name="tipo2" value="5" checked> Nenhum</label><br>
             <?php echo $etipo2 ?>
         </div>
 
@@ -85,11 +86,14 @@ if(isset($_POST["next"])) {
             <label><input type="checkbox" name="com[]" value="1"> Capa de Livro - R$20,00</label><br>
             <label><input type="checkbox" name="com[]" value="2"> Marca Página - R$10,00</label><br>
             <label><input type="checkbox" name="com[]" value="3"> Adesivos - R$5,00</label><br>
-            <label><input type="checkbox" name="com[]" value="4"> Nenhum</label><br>
+            <label><input type="checkbox" name="com[]" value="4" checked> Nenhum</label><br>
             <?php echo $ecom ?>
         </div>
 
-        <button type="submit" name="next">Prosseguir</button>
+        <div class="botao">
+            <a href="etapa2.php" class="voltar">Retroceder</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="submit" name="next">Prosseguir</button>
+        </div>
     </form>
 </body>
 </html>

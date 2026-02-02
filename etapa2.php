@@ -82,7 +82,7 @@ if (isset($_POST["botao"])) {
 </head>
 <body>
 	
-	<form method="POST" action="etapa-2.php"> <br/><br/>
+	<form method="POST" action="etapa2.php"> <br/><br/>
         <h2 align="center">DADOS DO CLIENTE</h2>
 		Nome:  <input type="text" name="nome" size="60" maxlength="50" minlength="5"
 		value="<?php if (isset($_SESSION["nome"])) echo $_SESSION["nome"] ?>">
@@ -133,11 +133,11 @@ if (isset($_POST["botao"])) {
         CEP:  <input type="number" name="cep" size="20" maxlength="8" minlength="8" placeholder="Apenas números"
         value="<?php if (isset($_SESSION["cep"])) echo $_SESSION["cep"] ?>">
         <?php echo $erro_cep ?> 
-        <br/>
-
-
         <br/><br/>
-        <input type="submit" value="Next" name="botao">
+        <div class="botao">
+            <a href="index.php" class="voltar">Retroceder</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="submit" value="Next" name="botao">Prosseguir</button>
+        </div>
     </form>
 </body>
 </html>

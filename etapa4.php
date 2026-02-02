@@ -49,7 +49,10 @@ if (isset($_POST["next"])) {
             <input type="radio" name="f" value="4"> Sem Frete - Escolhi E-book <br>
             <?php echo $ef ?>
 <br><br>
-            <button type="submit" name="next"> Next </button>
+            <div class="botao">
+                <a href="etapa3.php" class="voltar">Retroceder</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="submit" name="next">Prosseguir</button>
+            </div>
         </fieldset>
     </form>
 </body>

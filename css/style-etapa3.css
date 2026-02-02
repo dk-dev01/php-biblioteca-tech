@@ -107,8 +107,12 @@ input[type="checkbox"] {
     font-style: italic;
 }
 
-button {
-    display: block;
+.botao{
+    text-align: center;
+}
+
+button, a {
+    display: inline-block;
     margin: 40px auto 0;
     padding: 15px 50px;
     font-size: 1.1rem;
@@ -121,12 +125,14 @@ button {
     color: #3b2a00;
     box-shadow: 0 10px 22px rgba(0,0,0,0.35);
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
-button:hover {
+button:hover, a:hover {
     transform: translateY(-4px);
     box-shadow: 0 16px 32px rgba(0,0,0,0.45);
 }
+
 
 @media (max-width: 768px) {
     .form-container {
